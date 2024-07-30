@@ -37,7 +37,7 @@ nav {
 
     }
 
-    @media screen and (width <= 844px) {
+    @media screen and (max-width: 844px) {
         padding: 20px;
 
         .navbar_logo {

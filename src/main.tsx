@@ -4,6 +4,7 @@ import NavBar from "./compenents/navBar/NavBar.tsx"
 import Footer from "./compenents/footer/Footer.tsx"
 import App from './pages/App.tsx'
 import About from "./pages/About.tsx";
+import ErrorPage from './pages/ErrorPage.tsx'
 import "./style.scss";
 import { createBrowserRouter, RouterProvider, Outlet, } from "react-router-dom";
 
@@ -24,7 +25,7 @@ export default HeaderAndFooter;
 const router = createBrowserRouter([
   {
     element: <HeaderAndFooter />,
-    errorElement: <div>404 error</div>, // Joindre le fichier 404          
+    errorElement: <ErrorPage />, 
     children: [
       {
         path: "/",

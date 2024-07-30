@@ -19,7 +19,7 @@ footer {
         margin-top: 25px;
     }
 
-    @media screen and (width <= 844px) {
+    @media screen and (max-width: 844px) {
         .footer_text {
             font-size: 12px;
             margin-bottom: 40px;

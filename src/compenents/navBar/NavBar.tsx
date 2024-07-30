@@ -6,9 +6,11 @@ function NavBar() {
     return (
       <>
         <nav>
+          
           <Link to="/" className="navbar_logo">
             <img src="../public/logo.jpg" alt="Logo Kasa"/>        
           </Link>
+
           <ul className="navbar_list">
             <NavLink to="/" className="list_accueil">
               <li>Accueil</li>
@@ -17,6 +19,7 @@ function NavBar() {
               <li>À propos</li>
             </NavLink>
           </ul>
+
         </nav>
       </> 
     );

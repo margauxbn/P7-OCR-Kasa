@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import NavBar from "./compenents/navBar/NavBar.tsx"
 import Footer from "./compenents/footer/Footer.tsx"
 import App from './pages/App.tsx'
+import About from "./pages/About.tsx";
 import "./style.scss";
 import { createBrowserRouter, RouterProvider, Outlet, } from "react-router-dom";
 
@@ -31,11 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <div>À propos</div>        
+        element: <About />      
       },
       {
         path: "/location",
-        element: <div>Cozy loft</div>         
+        element: <div>Location</div>         
       },
     ]
   },

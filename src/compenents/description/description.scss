@@ -37,7 +37,7 @@
         font-weight: 400;
     }
 
-    @media screen and (width <= 844px) {
+    @media screen and (max-width: 844px) {
         margin: 0 30px;
         padding: 20px;
 
@@ -45,5 +45,4 @@
             margin: 30px;
         }
     }
-
 }

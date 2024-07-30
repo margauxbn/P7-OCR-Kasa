@@ -10,7 +10,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
 
-    @media screen and (width <= 844px) {
+    @media screen and (max-width: 844px) {
         justify-content: center;
         background-color: white;
         grid-template-columns: 1fr;

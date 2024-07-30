@@ -1,0 +1,49 @@
+.description_block {
+    margin-inline: 250px;
+    margin-bottom: 40px;
+
+    .description_title {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        background-color: #FF6060;
+        border-radius: 5px;
+
+        h2 {
+            padding-left: 15px;
+            margin-right: auto;
+            margin-block: 8px;
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFF;
+        }
+
+        .fa-chevron-down {
+            margin-right: 25px;
+            color: #FFF;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    .description_paragraph {
+        margin-inline: 30px;
+        text-align: justify;
+        font-size: 18px;
+        font-family: "Montserrat";
+        font-weight: 400;
+    }
+
+    @media screen and (width <= 844px) {
+        margin: 0 30px;
+        padding: 20px;
+
+        .description_block {
+            margin: 30px;
+        }
+    }
+
+}

@@ -1,4 +1,4 @@
-import "./style.scss";
+import "../style.scss";
 import Banner from "../compenents/banner/Banner.tsx";
 import ApartmentContainer from "../compenents/apartmentContainer/ApartmentContainer.tsx";
 

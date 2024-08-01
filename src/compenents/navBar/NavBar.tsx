@@ -11,14 +11,14 @@ function NavBar() {
             <img src="../public/logo.jpg" alt="Logo Kasa"/>        
           </Link>
 
-          <ul className="navbar_list">
+          <div className="navbar_list">
             <NavLink to="/" className="list_accueil">
-              <li>Accueil</li>
+              Accueil
             </NavLink>
             <NavLink to="/about">
-              <li>À propos</li>
+              À propos
             </NavLink>
-          </ul>
+          </div>
 
         </nav>
       </> 

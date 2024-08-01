@@ -1,48 +1,70 @@
 .description_block {
     margin-inline: 250px;
     margin-bottom: 40px;
+    overflow: hidden;
+  }
+  
+  .description_title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .description_title h2 {
+    padding-left: 15px;
+    margin-right: auto;
+    margin-block: 8px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF;
+  }
+  
+  .description_title .fa-chevron-down {
+    margin-right: 25px;
+    color: #FFF;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .description_title .fa-chevron-down.rotate {
+    transform: rotate(-180deg);
+  }
+  
+  .description_paragraph {
+    margin-inline: 30px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease-in-out;
+  }
+  
+  .description_paragraph.show {
+    max-height: 200px;
+  }
+  
+  .description_paragraph.hide {
+    max-height: 0;
+  }
+  
 
-    .description_title {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 10px;
-        background-color: #FF6060;
-        border-radius: 5px;
-
-        h2 {
-            padding-left: 15px;
-            margin-right: auto;
-            margin-block: 8px;
-            font-family: "Montserrat";
-            font-weight: 700;
-            font-size: 24px;
-            color: #FFF;
-        }
-
-        .fa-chevron-down {
-            margin-right: 25px;
-            color: #FFF;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
+  @media screen and (max-width: 844px) {
+    .description_block {
+      margin: 0 30px;
+      padding: 20px;
     }
-
-    .description_paragraph {
-        margin-inline: 30px;
-        text-align: justify;
-        font-size: 18px;
-        font-family: "Montserrat";
-        font-weight: 400;
+  
+    .description_block .description_block {
+      margin: 30px;
     }
-
-    @media screen and (max-width: 844px) {
-        margin: 0 30px;
-        padding: 20px;
-
-        .description_block {
-            margin: 30px;
-        }
-    }
-}
+  }

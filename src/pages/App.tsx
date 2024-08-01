@@ -6,7 +6,7 @@ function App() {
   
   return (
     <>
-      <Banner ImgUrl="/public/banner_img.jpg" BannerHome="Chez vous, partout et ailleurs" />
+      <Banner imageUrl="/public/banner_img.jpg" bannerHome="Chez vous, partout et ailleurs" />
       <ApartmentContainer />
     </> 
   );

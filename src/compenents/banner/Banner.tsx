@@ -5,8 +5,8 @@ function Banner(props:any) {
     return (
       <>
         <div className="banner">
-            <img src={props.ImgUrl}/>
-            <h1>{props.BannerHome}</h1>
+            <img src={props.imageUrl}/>
+            <h1>{props.bannerHome}</h1>
         </div>
       </> 
     );

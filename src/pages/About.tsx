@@ -7,7 +7,7 @@ function About() {
   return (
     <>
         <div className="about_banner">
-            <Banner ImgUrl="/public/about_banner.jpg" BannerHome="" />
+            <Banner imageUrl="/public/about_banner.jpg" bannerHome="" />
         </div>
         <div className="about_description">
             <Description TitleDescription="Fiabilité" ParagraphDescription="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>

@@ -1,15 +1,16 @@
 import "./apartment-card.scss";
 import { Link } from "react-router-dom";
 
-function ApartmentBox() {
+function ApartmentCard(props:any) {
   
     return (
       <>
       <Link to ="/location" className="apartment">
-        <h2 className="location_title">Titre de la location</h2>
+        <img src={props.imageCard}/>
+        <h2 className="location_title">{props.title}</h2>
       </Link>
       </> 
     );
   }
 
-export default ApartmentBox
+export default ApartmentCard

@@ -1,16 +1,24 @@
 .apartment {
-    border-radius: 10px;
-    background: linear-gradient(to top, #B34242, #FF6060);
     display: grid;
     align-items: end;
     height: 300px;
     text-decoration: none;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: brightness(85%);
+    }
 
     .location_title {
         font-family: "Montserrat";
         font-size: 18px;
         font-weight: 500;
         color: #FFF;
-        margin-left: 15px;
+        margin-inline: 15px;
+        position: absolute;
     }
 }

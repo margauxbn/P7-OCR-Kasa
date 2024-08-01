@@ -1,5 +1,5 @@
 import "./apartment-container.scss";
-import ApartmentBox from "../apartmentBox/ApartmentBox"
+import ApartmentBox from "../apartmentBox/ApartmentCard"
 
 
 function ApartmentContainer() {

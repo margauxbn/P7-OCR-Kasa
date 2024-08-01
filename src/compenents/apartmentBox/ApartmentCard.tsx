@@ -1,4 +1,4 @@
-import "./apartment-box.scss";
+import "./apartment-card.scss";
 import { Link } from "react-router-dom";
 
 function ApartmentBox() {

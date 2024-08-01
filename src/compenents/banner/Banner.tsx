@@ -1,11 +1,12 @@
 import "./banner.scss";
 
-function Banner() {
+function Banner(props:any) {
   
     return (
       <>
         <div className="banner">
-            <h1>Chez vous, partout et ailleurs</h1>
+            <img src={props.ImgUrl}/>
+            <h1>{props.BannerHome}</h1>
         </div>
       </> 
     );

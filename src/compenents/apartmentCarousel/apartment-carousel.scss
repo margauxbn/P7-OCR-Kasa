@@ -1,0 +1,14 @@
+.apartment-carousel {
+    display: flex;
+    justify-content: center;
+    margin-inline: 100px;
+    height: 415px;
+    margin-bottom: 20px;
+    
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+}

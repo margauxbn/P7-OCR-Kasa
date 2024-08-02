@@ -1,0 +1,35 @@
+.apartment-title {
+    margin-left: 100px;
+    margin-right: auto;
+    font-family: "Montserrat";
+
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+        margin-block: 0px;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+        margin-block: 10px;       
+    }
+
+    .tag {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        p {
+            font-size: 14px;
+            font-weight: 700;
+            color: #FFF;      
+            background-color: #FF6060;
+            padding-inline: 50px;
+            padding-block: 5px;
+            border-radius: 30px;
+        }
+    }
+}

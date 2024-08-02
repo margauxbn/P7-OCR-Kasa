@@ -5,6 +5,7 @@ import Footer from "./compenents/footer/Footer.tsx"
 import App from './pages/App.tsx'
 import About from "./pages/About.tsx";
 import ErrorPage from './pages/ErrorPage.tsx'
+import ApartmentPage from './pages/ApartmentPage.tsx';
 import "./style.scss";
 import { createBrowserRouter, RouterProvider, Outlet, } from "react-router-dom";
 
@@ -36,8 +37,8 @@ const router = createBrowserRouter([
         element: <About />      
       },
       {
-        path: "/location",
-        element: <div>Location</div>         
+        path: "/appartement",
+        element: <ApartmentPage />      
       },
     ]
   },

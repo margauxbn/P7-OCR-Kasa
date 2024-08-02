@@ -5,12 +5,13 @@ import { useEffect, useState } from "react";
 
 function ApartmentContainer() {
   
-  type apartment = {
+  type Apartment = {
     title: string;
     cover: string;
+    id: string;
   }
   
-  const [apartments, setApartments] = useState<apartment[]>([]);
+  const [apartments, setApartments] = useState<Apartment[]>([]);
 
   useEffect (fetchAppartments, []);
 
@@ -25,7 +26,7 @@ function ApartmentContainer() {
       <>
         <div className="apartment_container">
           {apartments.map((apartment) => (
-            <ApartmentCard title={apartment.title} imageCard={apartment.cover}/>            
+            <ApartmentCard title={apartment.title} imageCard={apartment.cover} id={apartment.id}/>            
           ))}
         </div>
       </> 

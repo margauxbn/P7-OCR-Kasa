@@ -12,8 +12,8 @@ function ApartmentReview(props: any) {
                   </div>
               </div>
               <div className="rating">
-                  {[1, 2, 3, 4, 5].map((rate) => (
-                     <i className={`fa-solid fa-star ${props.flat?.rating >= rate ? "full" : ""}`}></i>
+                  {[1, 2, 3, 4, 5].map((rate, i) => (
+                     <i key={i} className={`fa-solid fa-star ${props.flat?.rating >= rate ? "full" : ""}`}></i>
                   ))} 
               </div>
           </div>

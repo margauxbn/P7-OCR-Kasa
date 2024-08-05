@@ -10,7 +10,7 @@ function ApartmentPage() {
 
   type Apartment = {
     id: string;
-    cover: string;
+    pictures: string;
     title: string;
     description: string;
     location: string;
@@ -46,7 +46,7 @@ function ApartmentPage() {
 
   return (
     <>
-      <ApartmentCarousel imageUrl={flat.cover} />
+      <ApartmentCarousel pictures={flat.pictures} />
       <div className="apartment-body">
         <ApartmentTitle title={flat.title} location={flat.location}/>
         <ApartmentReview host={flat.host.name} picture={flat.host.picture}/>

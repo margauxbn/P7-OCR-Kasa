@@ -25,8 +25,8 @@ function ApartmentContainer() {
     return (
       <>
         <div className="apartment_container">
-          {apartments.map((apartment) => (
-            <ApartmentCard title={apartment.title} imageCard={apartment.cover} id={apartment.id}/>            
+          {apartments.map((apartment, i) => (
+            <ApartmentCard key={i} title={apartment.title} imageCard={apartment.cover} id={apartment.id}/>            
           ))}
         </div>
       </> 

@@ -9,8 +9,8 @@ function ApartmentTitle(props:any) {
             <h2>{props.location}</h2>
             <div className="tag">
               {/*
-              {props.tags.map((tag) => (
-                <p>{props.tag}</p>
+              {props.tags.map((tag, i) => (
+                <p key={i}>{props.tag}</p>
               ))} */
               }
             </div>

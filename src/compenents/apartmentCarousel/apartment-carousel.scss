@@ -4,11 +4,48 @@
     margin-inline: 100px;
     height: 415px;
     margin-bottom: 20px;
+    position: relative;
     
     img {
+        position: absolute;
+        inset: 0;
         height: 100%;
         width: 100%;
         object-fit: cover;
         border-radius: 30px;
+        opacity: 0;
+        transition: opacity 0.1s ease-in-out;
+
+        &.show {
+            opacity: 1;
+        }
+    }
+
+    button {
+        position: absolute;
+        top: 45%;
+        z-index: 2;
+        cursor: pointer;
+        font-size: 65px;
+        color: #FFF;
+        background-color: transparent;
+        border: transparent;
+
+        &.btn-previous {
+            left: 5px;
+        }
+
+        &.btn-next {
+            right: 5px;
+        }
+    }
+
+    .slide-counter {
+        position: absolute;
+        bottom: 20px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
     }
 }

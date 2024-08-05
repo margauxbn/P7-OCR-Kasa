@@ -22,3 +22,18 @@
     gap: 100px;   
 }
 
+@media screen and (max-width: 844px) {
+  .apartment-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .apartment-description {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 30px;
+    margin-bottom: 0;
+    gap: 0;
+  }
+}
+

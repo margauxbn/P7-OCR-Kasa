@@ -2,6 +2,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 40px 100px;
+    flex-wrap: wrap;
 
    .navbar_logo {
         height: 100%;
@@ -24,18 +25,14 @@ nav {
             text-decoration: none;
             color: black;
 
-
             &:hover {
                 font-weight: 600;
             }
-
         }
 
         .list_accueil {
             margin-right: 40px;
         }
-
-
     }
 
     @media screen and (max-width: 844px) {
@@ -43,6 +40,7 @@ nav {
 
         .navbar_logo {
             width: 100px;
+            
         }
 
         .navbar_list {

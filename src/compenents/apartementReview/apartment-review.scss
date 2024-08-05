@@ -14,6 +14,9 @@
             font-size: 18px;
             font-weight: 500;
             color: #FF6060;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
         }
         
         img {
@@ -31,8 +34,30 @@
         margin-top: 2.5rem;
         color: #E3E3E3;
 
-        .full {
+        &.full {
             color: #FF6060;
         }
     }
 }
+
+@media screen and (max-width: 844px) {
+    .apartment-review {
+        margin-inline: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+
+        .host-profile {
+            h3 {
+                margin-right: 10px;
+                display: flex;
+                justify-content: end;
+            }
+        }
+        
+        .rating {
+            margin-right: auto;
+            margin-top: 1.5rem;
+        }
+    }
+  }

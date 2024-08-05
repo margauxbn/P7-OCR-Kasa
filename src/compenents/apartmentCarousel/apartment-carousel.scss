@@ -48,4 +48,8 @@
         font-size: 18px;
         color: #fff;
     }
+
+    @media screen and (max-width: 844px) {
+        margin-inline: 30px;
+    }
 }

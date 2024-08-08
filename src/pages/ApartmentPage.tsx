@@ -43,7 +43,7 @@ export const ApartmentPage: React.FC = () => {
       </div>
       <div className="apartment-description">
         <Description titleDescription="Description" paragraphDescription={description} />
-        <Description titleDescription="Équipements" paragraphDescription={equipments.join(", ")} />
+        <Description titleDescription="Équipements" paragraphDescription={equipments} />
       </div>
     </>
   );

@@ -1,5 +1,5 @@
-import Banner from "../compenents/banner/Banner.tsx";
-import Description from "../compenents/description/Description.tsx";
+import Banner from "../components/banner/Banner.tsx";
+import Description from "../components/description/Description.tsx";
 import "./about.scss"
 
 function About() {

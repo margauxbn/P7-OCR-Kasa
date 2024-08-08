@@ -1,6 +1,6 @@
 import "../style.scss";
-import Banner from "../compenents/banner/Banner.tsx";
-import ApartmentContainer from "../compenents/apartmentContainer/ApartmentContainer.tsx";
+import Banner from "../components/banner/Banner.tsx";
+import ApartmentContainer from "../components/apartmentContainer/ApartmentContainer.tsx";
 
 function App() {
   

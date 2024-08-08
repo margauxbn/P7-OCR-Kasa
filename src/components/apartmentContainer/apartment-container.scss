@@ -4,12 +4,11 @@
     margin-bottom: 60px;
     padding: 30px 30px;
     gap: 40px;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-
     
     @media screen and (max-width: 844px) {
         justify-content: center;

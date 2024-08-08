@@ -1,6 +1,6 @@
 import "./error-page.scss"
-import NavBar from "../compenents/navBar/NavBar";
-import Footer from "../compenents/footer/Footer";
+import NavBar from "../components/navBar/NavBar";
+import Footer from "../components/footer/Footer";
 import { Link } from "react-router-dom";
 
 function ErrorPage() {

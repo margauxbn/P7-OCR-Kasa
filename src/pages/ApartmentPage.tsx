@@ -1,8 +1,8 @@
 import "./apartment-page.scss";
-import ApartmentCarousel from "../compenents/apartmentCarousel/ApartmentCarousel";
-import ApartmentTitle from "../compenents/apartmentTitle/ApartmentTitle";
-import ApartmentReview from "../compenents/apartementReview/ApartmentReview";
-import Description from "../compenents/description/Description";
+import ApartmentCarousel from "../components/apartmentCarousel/ApartmentCarousel";
+import ApartmentTitle from "../components/apartmentTitle/ApartmentTitle";
+import ApartmentReview from "../components/apartementReview/ApartmentReview";
+import Description from "../components/description/Description";
 import { useParams } from "react-router-dom";
 import locations from "../../database.json";
 import React from "react";

@@ -9,4 +9,4 @@ function ApartmentCard(props: any) {
   );
 }
 
-export default ApartmentCard;
+export default ApartmentCard; 

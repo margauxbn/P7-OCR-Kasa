@@ -1,6 +1,6 @@
 import "./apartment-review.scss";
-import redStar from "../../assets/img/red-star.svg";
-import greyStar from "../../assets/img/grey-star.svg"
+import redStar from "../../assets/red-star.jpg";
+import greyStar from "../../assets/grey-star.jpg";
 
 function ApartmentReview(props: any) {
 
@@ -16,32 +16,32 @@ function ApartmentReview(props: any) {
                   <span>{lastName}</span>
                 </h3>
                 <div className="host-picture">
-                    <img src={props.picture} alt={`${props.host}'s picture`}/>
+                    <img src={props.picture} alt={`Photo de profil de ${props.host}`}/>
                 </div>
             </div>
             <div className="rating">
-            {/*<div className="rating">
-      {stars.map((star) =>
-        props.rating >= star ? (
-          <img
-            key={star.toString()}
-            className="rating-icon"
-            src={redStar}
-            alt="Étoiles rouges"
-          />
-        ) : (
-          <img
-            key={star.toString()}
-            className="rating-icon"
-            src={greyStar}
-            alt="Étoiles grises"
-          />
-        )
-      )}
-    </div>
-    */}
+            
+              {stars.map((star) =>
+                props.rating >= star ? (
+                  <img
+                    key={star.toString()}
+                    className="rating-icon"
+                    src={redStar}
+                    alt="Étoile rouge"
+                  />        
+              ) : (
+                <img
+                  key={star.toString()}
+                  className="rating-icon"
+                  src={greyStar}
+                  alt="Étoile grise"
+                />
+              )
+              )}
             </div>
+   
         </div>
+        
       </>
   );
 }

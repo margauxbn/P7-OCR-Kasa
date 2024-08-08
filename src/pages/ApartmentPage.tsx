@@ -3,61 +3,50 @@ import ApartmentCarousel from "../compenents/apartmentCarousel/ApartmentCarousel
 import ApartmentTitle from "../compenents/apartmentTitle/ApartmentTitle";
 import ApartmentReview from "../compenents/apartementReview/ApartmentReview";
 import Description from "../compenents/description/Description";
-import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import locations from "../../database.json";
+import React from "react";
 
-function ApartmentPage() {
-
-  type Apartment = {
-    id: string;
-    pictures: string;
-    title: string;
-    description: string;
-    location: string;
-    host: Host;
-    equipments: string;
-  };
-
-    type Host = {
+interface Location {
+  id: string;
+  title: string;
+  location: string;
+  rating: string;
+  host: {
     name: string;
     picture: string;
   };
+  equipments: string[];
+  description: string;
+  pictures: string[];
+  tags: string[];
+}
 
-  const location = useLocation();
-  const [flat, setFlat] = useState<Apartment | null>(null);
 
-  useEffect(() => {
-    fetchDataApartment();
-  }, []);
+export const ApartmentPage: React.FC = () => {
+  const { locationId } = useParams<{locationId:string}>();
+  const locationContent: Location | undefined = locations.find((location) => location.id === locationId);
 
-  function fetchDataApartment() {
-    fetch("/database.json")
-      .then((res) => res.json())
-      .then((apartments: Apartment[]) => {
-        const filteredApartments = apartments.filter(apartment => apartment.id === location.state?.apartmentId);
-        setFlat(filteredApartments[0] || null);
-      })
-      .catch(console.error);
+  if (!locationContent) {
+    window.location.replace("/error");
+    return null;
   }
 
-  if (!flat) {
-    return <div className="loading">Loading...</div>;
-  }
+  const { title, location, rating, host, equipments, description, pictures, tags } = locationContent;
 
   return (
     <>
-      <ApartmentCarousel pictures={flat.pictures} />
+      <ApartmentCarousel pictures={pictures} />
       <div className="apartment-body">
-        <ApartmentTitle title={flat.title} location={flat.location}/>
-        <ApartmentReview host={flat.host.name} picture={flat.host.picture}/>
+        <ApartmentTitle title={title} location={location} tags={tags} />
+        <ApartmentReview host={host.name} picture={host.picture} rating={rating} />
       </div>
       <div className="apartment-description">
-        <Description titleDescription="Description" paragraphDescription={flat.description}/>
-        <Description titleDescription="Équipements" paragraphDescription={flat.equipments}/>
+        <Description titleDescription="Description" paragraphDescription={description} />
+        <Description titleDescription="Équipements" paragraphDescription={equipments.join(", ")} />
       </div>
     </>
   );
 }
 
 export default ApartmentPage;
-

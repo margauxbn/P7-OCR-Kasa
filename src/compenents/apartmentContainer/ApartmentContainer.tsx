@@ -1,34 +1,21 @@
 import "./apartment-container.scss";
 import ApartmentCard from "../apartmentCard/ApartmentCard"
-import { useEffect, useState } from "react";
-
+import locations from "../../../database.json";
+import { Link } from "react-router-dom";
 
 function ApartmentContainer() {
   
-  type Apartment = {
-    title: string;
-    cover: string;
-    id: string;
-  }
-  
-  const [apartments, setApartments] = useState<Apartment[]>([]);
-
-  useEffect (fetchAppartments, []);
-
-  function fetchAppartments() {
-    fetch("/database.json")
-    .then((res) => res.json())
-    .then((res) => setApartments(res))
-    .catch(console.error);
-  }
-
     return (
       <>
-        <div className="apartment_container">
-          {apartments.map((apartment, i) => (
-            <ApartmentCard key={i} title={apartment.title} imageCard={apartment.cover} id={apartment.id}/>            
-          ))}
-        </div>
+        {locations.map((location) => {
+          return (
+            <article key={location.id} className="apartment_container">
+              <Link key={location.id} to={`/appartement/${location.id}`} className="apartment">
+                <ApartmentCard title={location.title} imageCard={location.cover}/>
+              </Link>
+            </article> 
+          )
+        })}
       </> 
     );
   }

@@ -1,8 +1,11 @@
 import "./apartment-review.scss";
+import redStar from "../../assets/img/red-star.svg";
+import greyStar from "../../assets/img/grey-star.svg"
 
 function ApartmentReview(props: any) {
 
     const [firstName, lastName] = props.host.split(" ");
+    const stars = [1, 2, 3, 4, 5];
 
   return (
       <>
@@ -17,9 +20,26 @@ function ApartmentReview(props: any) {
                 </div>
             </div>
             <div className="rating">
-                {[1, 2, 3, 4, 5].map((rate, i) => (
-                   <i key={i} className={`fa-solid fa-star ${props.flat?.rating >= rate ? "full" : ""}`}></i>
-                ))} 
+            {/*<div className="rating">
+      {stars.map((star) =>
+        props.rating >= star ? (
+          <img
+            key={star.toString()}
+            className="rating-icon"
+            src={redStar}
+            alt="Étoiles rouges"
+          />
+        ) : (
+          <img
+            key={star.toString()}
+            className="rating-icon"
+            src={greyStar}
+            alt="Étoiles grises"
+          />
+        )
+      )}
+    </div>
+    */}
             </div>
         </div>
       </>

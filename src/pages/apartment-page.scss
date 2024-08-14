@@ -13,7 +13,7 @@
   flex-direction: row;
 }
 
-.apartment-description {
+.apartment-collapse {
     margin-top: 25px;
     margin-bottom: 40px;
     display: flex;
@@ -26,6 +26,7 @@
       list-style-type: none;
       text-align: left;
       padding: 0;
+      margin-top: 0;
 
       li {
         margin-bottom: 4px;
@@ -39,7 +40,7 @@
     flex-direction: column;
   }
 
-  .apartment-description {
+  .apartment-collapse {
     display: flex;
     flex-direction: column;
     margin-inline: 30px;

@@ -1,7 +1,7 @@
-import "./apartment-carousel.scss";
+import "./carousel.scss";
 import { useState } from "react";
 
-function ApartmentCarousel(props:any) {
+function Carousel(props:any) {
 
   const pictures = props.pictures;
   const [currentPicture, setCurrentPicture] = useState(0);
@@ -21,7 +21,7 @@ function ApartmentCarousel(props:any) {
 
   return (
       <>
-        <div className="apartment-carousel">
+        <div className="carousel">
           {pictures.map((picture:string, i:number) => 
             <img key={picture} src={picture} alt="" className={getClassName(i)}/>
           )}
@@ -45,4 +45,4 @@ function ApartmentCarousel(props:any) {
     );
   }
     
-export default ApartmentCarousel
+export default Carousel

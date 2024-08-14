@@ -9,10 +9,10 @@ function ErrorPage() {
       <>
         <NavBar />
 
-        <div className="error_page">
+        <div className="error-page">
             <h1>404</h1>
             <h2>Oups ! La page que vous demandez n'existe pas.</h2>
-            <Link to="/" className="link_to_home">
+            <Link to="/" className="link-to-home">
                 <p>Retourner sur la page d’accueil</p>
             </Link>            
         </div>

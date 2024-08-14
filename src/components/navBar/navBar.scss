@@ -4,7 +4,7 @@ nav {
     padding: 40px 100px;
     flex-wrap: wrap;
 
-   .navbar_logo {
+   .navbar-logo {
         height: 100%;
         margin-right: auto;
 
@@ -13,7 +13,7 @@ nav {
         }
     } 
 
-    .navbar_list {
+    .navbar-list {
         list-style-type: none;
         display: flex;
         flex-direction: row;
@@ -34,7 +34,7 @@ nav {
             }
         }
 
-        .list_accueil {
+        .list-accueil {
             margin-right: 40px;
         }
     }
@@ -42,16 +42,16 @@ nav {
     @media screen and (max-width: 844px) {
         padding: 20px;
 
-        .navbar_logo {
+        .navbar-logo {
             width: 100px;
             
         }
 
-        .navbar_list {
+        .navbar-list {
             font-size: 12px;
             text-transform: uppercase;
 
-            .list_accueil {
+            .list-accueil {
                 margin-right: 20px;
             }
         }

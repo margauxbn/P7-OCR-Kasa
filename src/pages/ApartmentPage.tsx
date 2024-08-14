@@ -43,7 +43,15 @@ export const ApartmentPage: React.FC = () => {
       </div>
       <div className="apartment-description">
         <Description titleDescription="Description" paragraphDescription={description} />
-        <Description titleDescription="Équipements" paragraphDescription={equipments} />
+        <Description titleDescription="Équipements" paragraphDescription={
+          <ul>
+            {equipments.map((equipment) => 
+              <li key={equipment}>
+                {equipment}
+              </li>
+            )}
+          </ul>
+        } />
       </div>
     </>
   );

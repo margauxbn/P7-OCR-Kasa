@@ -19,15 +19,7 @@ function Description(props: any) {
       </div>
 
       <div className={`description_paragraph ${isParagraphVisible ? 'show' : ''}`}>
-        {Array.isArray(props.paragraphDescription) ? (
-          <ul>
-            {props.paragraphDescription.map((item: string) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>{props.paragraphDescription}</p>
-        )}
+        {props.paragraphDescription}
       </div>
       
     </div>

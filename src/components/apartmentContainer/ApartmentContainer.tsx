@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 function ApartmentContainer() {
   return (
-      <div className="apartment_container">
+      <div className="apartment-container">
           {locations.map((location) => {
               return (
                   <article key={location.id}>
                       <Link to={`/appartement/${location.id}`}>
-                          <ApartmentCard title={location.title} imageCard={location.cover} className="apartment_link" />
+                          <ApartmentCard title={location.title} imageCard={location.cover} className="apartment-link" />
                       </Link>
                   </article>
               );

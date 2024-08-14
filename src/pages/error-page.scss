@@ -1,4 +1,4 @@
-.error_page {
+.error-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@
         text-align: center;
     }
 
-    .link_to_home {
+    .link-to-home {
         font-size: 18px;
         color: black;
         margin-top: 20px;
@@ -28,7 +28,7 @@
 }
 
 @media screen and (max-width: 844px) {
-    .error_page {
+    .error-page {
         h1 {
             font-size: 96px;
             margin-top: 40px;
@@ -40,7 +40,7 @@
             margin-bottom: 80px;
         }
 
-        .link_to_home {
+        .link-to-home {
             font-size: 14px;
             margin-bottom: 100px;
         }

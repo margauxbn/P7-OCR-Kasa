@@ -1,10 +1,10 @@
-.description-block {
+.collapse-block {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  .description_title {
+  .collapse-title {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
@@ -27,7 +27,7 @@
   }
 }
 
-  .description_title .fa-chevron-down {
+  .collapse-title .fa-chevron-down {
     margin-right: 25px;
     color: #FFF;
     font-size: 24px;
@@ -36,11 +36,11 @@
     transition: transform 0.4s ease-in-out;
   }
 
-  .description_title .fa-chevron-down.rotate {
+  .collapse-title .fa-chevron-down.rotate {
     transform: rotate(-180deg);
   }
 
-  .description_paragraph {
+  .collapse-paragraph {
     margin-inline: 30px;
     margin-bottom: 20px;
     text-align: justify;
@@ -52,19 +52,19 @@
     transition: max-height 0.4s ease-in-out;
   }
 
-  .description_paragraph.show {
+  .collapse-paragraph.show {
     max-height: 200px;
   }
 
   @media screen and (max-width: 844px) {
-    .description-block {
-      .description_title {
+    .collapse-block {
+      .collapse-title {
         h2 {
           font-size: 13px;
         }
       }
       
-      .description_paragraph {
+      .collapse-paragraph {
         font-size: 12px;
       }
     }

@@ -1,5 +1,5 @@
 import "./apartment-page.scss";
-import Carousel from "../components/carousel/Carousel";
+import Gallery from "../components/gallery/Gallery";
 import ApartmentTitle from "../components/apartmentTitle/ApartmentTitle";
 import ApartmentReview from "../components/apartementReview/ApartmentReview";
 import Collapse from "../components/collapse/Collapse";
@@ -36,7 +36,7 @@ export const ApartmentPage: React.FC = () => {
 
   return (
     <>
-      <Carousel pictures={pictures} />
+      <Gallery pictures={pictures} />
       <div className="apartment-body">
         <ApartmentTitle title={title} location={location} tags={tags} />
         <ApartmentReview host={host.name} picture={host.picture} rating={rating} />

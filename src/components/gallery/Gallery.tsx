@@ -1,7 +1,7 @@
-import "./carousel.scss";
+import "./gallery.scss";
 import { useState } from "react";
 
-function Carousel(props:any) {
+function Gallery(props:any) {
 
   const pictures = props.pictures;
   const [currentPicture, setCurrentPicture] = useState(0);
@@ -21,7 +21,7 @@ function Carousel(props:any) {
 
   return (
       <>
-        <div className="carousel">
+        <div className="gallery">
           {pictures.map((picture:string, i:number) => 
             <img key={picture} src={picture} alt="" className={getClassName(i)}/>
           )}
@@ -45,4 +45,4 @@ function Carousel(props:any) {
     );
   }
     
-export default Carousel
+export default Gallery
